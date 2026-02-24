@@ -1,0 +1,88 @@
+/* Стили для тела страницы */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    /* Градиент для фона */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Контейнер счетчика */
+.counter-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Окно отображения результата */
+#result-window {
+    width: 100px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #333;
+    /* Базовый цвет (красный для нуля) */
+    background-color: red; 
+    transition: background-color 0.3s ease;
+}
+
+/* Обертка для кнопок */
+.buttons-wrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Стили кнопок */
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* скругление по 5 пикселей */
+    border-radius: 5px; 
+    /* фон кнопок */
+    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    transition: opacity 0.2s;
+}
+
+/* Стили для неактивной кнопки */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Градиенты для кнопок */
+#btn-plus {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+#btn-minus {
+    background: linear-gradient(to right, #cb2d3e, #ef473a);
+}
+
+/* Окно сообщения */
+#message-window {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    min-height: 20px;
+}
+
+
